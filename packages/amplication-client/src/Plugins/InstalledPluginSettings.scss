@@ -1,6 +1,5 @@
 @import "../style/index.scss";
 
-$menuWidth: 500px;
 $selectMenuWidth: 200px;
 
 .installed-plugin-settings {
@@ -38,7 +37,6 @@ $selectMenuWidth: 200px;
   }
 
   &__menu {
-    width: $menuWidth;
     .select-menu__modal > div {
       width: $selectMenuWidth;
     }

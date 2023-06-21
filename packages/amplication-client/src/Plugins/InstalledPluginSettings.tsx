@@ -162,9 +162,9 @@ const InstalledPluginSettings: React.FC<Props> = ({
                 className={`${moduleClass}__menu`}
                 icon="chevron_down"
               >
-                <SelectMenuModal>
+                <SelectMenuModal style={{ paddingRight: "10px" }}>
                   <SelectMenuList>
-                    <>
+                    <div>
                       {plugin.versions.map((pluginVersion: PluginVersion) => (
                         <SelectMenuItem
                           closeAfterSelectionChange
@@ -178,7 +178,7 @@ const InstalledPluginSettings: React.FC<Props> = ({
                           {pluginVersion.version}
                         </SelectMenuItem>
                       ))}
-                    </>
+                    </div>
                   </SelectMenuList>
                 </SelectMenuModal>
               </SelectMenu>
